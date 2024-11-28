@@ -1,11 +1,12 @@
 // Completa esta función para que, al recibir dos números por argumento, te devuelva por consola el más alto de los dos.
+
 function greaterNumber(numberOne , numberTwo) {
     // Completar código:
     if (numberOne > numberTwo) {
-        return numberOne;
+        console.log(numberOne);
     } else if (numberOne < numberTwo) {
-        return numberTwo;
+        console.log(numberTwo);
     } else {
-        return "Ambos números son iguales";
+        console.log("Ambos números son iguales");
     }
 }

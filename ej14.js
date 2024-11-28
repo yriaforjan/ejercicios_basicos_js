@@ -2,6 +2,7 @@
 /*Por ejemplo, que devuelva: code:4, repeat: 1, eat: 1,...
 Podéis conformar el formato que queráis para la devolución del resultado siempre y cuando sea claro.
 Puedes usar este array para probar tu función:*/
+
 const words = [
     'code',
     'repeat',
@@ -18,10 +19,11 @@ const words = [
 
 function repeatCounter(list) {
     // Completar
-    const result = {};
+    let counter = {};
     list.forEach((element) => {
-        element.repeat = 1;
+        counter[element] = (counter[element] || 0) + 1;
     });
-    console.log(result);
+    return counter;
 }
-repeatCounter(words);
+
+console.log(repeatCounter(words));

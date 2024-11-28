@@ -18,4 +18,5 @@ function includes (list, word) {
         }
     }
 }
+
 includes(products, "Camiseta");
