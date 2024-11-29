@@ -22,8 +22,8 @@ let edad = 20;
 "Soy Leia Organa, tengo 20 años y soy una princesa de Alderaan."
 - Utiliza la concatenación para ello. */
 
-console.log("Soy " + nombre + " " + apellido + ", tengo " + edad + " años y soy una princesa de Alderaan.");
-console.log(`Soy ${nombre} ${apellido}, tengo ${edad} años y soy una princesa de Alderaan`);
+console.log("Soy " + nombre + " " + apellido + ", tengo " + edad + " años y soy una princesa de Alderaan."); //concatenación
+console.log(`Soy ${nombre} ${apellido}, tengo ${edad} años y soy una princesa de Alderaan`); //esta seria otra forma de hacerlo
 
 
 // 3. Calculando el coste total de sables de luz:

@@ -22,10 +22,11 @@ function nameFinder(nameList, nameToFind) {
     if (nameList.includes(nameToFind)) {
         nameFound = true;
         posicion = nameList.indexOf(nameToFind);
+        console.log(nameFound, posicion);
     } else {
         nameFound = false;
+        console.log(nameFound);
     }
-    console.log(nameFound, posicion);
 }
 
-/* nameFinder(names, "Peggy"); */
+nameFinder(names, "Yria");

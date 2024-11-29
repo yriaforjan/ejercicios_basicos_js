@@ -17,9 +17,8 @@ for (let i=0; i<toys.length; i++) {
     let toyName = toy.name;
     if (toyName.includes("gato")) {
         toys.splice(i, 1);
+        i--;
     }
 }
 
 console.log(toys);
-//MAL
-//no me borra {id: 40, name: 'FurReal Friends gato interactivo'} por estar a continuación de otro elemento que contiene "gato" pero si lo cambio de posición sí me lo borra WTFFFFFF
