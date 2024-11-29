@@ -13,17 +13,13 @@ const foodSchedule = [
   { name: "Pasta", isVegan: true },
 ];
 
-
+let fruitsCounter = 0;
 for (const food of foodSchedule) {
     if (food.isVegan === false) {
-        for (const fruit of fruits) {
-            food.name = fruit;
-            fruits.splice(fruits.indexOf(fruit), 1);
-        }
+        food.name = fruits[fruitsCounter];
+        fruitsCounter+=1;
         food.isVegan = true;
     }
 }
 
 console.log(foodSchedule);
-
-//¿Por qué no me coge las frutas en orden?????
