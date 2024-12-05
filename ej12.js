@@ -14,12 +14,24 @@ const duplicates = [
     'onion rings',
     'pasta',
     'soda'
-  ];
+];
 
-  function removeDuplicates(list) {
-    // Completar
-    const noDuplicates = new Set(list);
-    return noDuplicates;
+function removeDuplicates(list) {
+  // Completar
+  const noDuplicates = [];
+  for (const element of list) {
+    if (!noDuplicates.includes(element)) {
+      noDuplicates.push(element);
+    }
   }
+  return noDuplicates;
+}
+
+// Con el método moderno Set(), más sencillo:
+/* function removeDuplicates(list) {
+  // Completar
+  const noDuplicates = new Set(list);
+  return noDuplicates;
+} */
   
-  console.log(removeDuplicates(duplicates));
+console.log(removeDuplicates(duplicates));
